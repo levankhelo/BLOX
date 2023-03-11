@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+  core:
+    build:
+      dockerfile: Dockerfile
+      context: core
+    container_name: core
+    privileged: true
+    volumes:
+      - ./core:/app:ro
+      - ./shared:/shared:rw
+      - ./models/default:/config
+    devices:
+      - /dev:/dev
