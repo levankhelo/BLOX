@@ -1,6 +1,8 @@
 streams:
   usb: true
-  rtsp: false
+  rtsp:  
+    enabled: false
+    address: 0.0.0.0
   snap-delay: 0.2 # 0.2
 
 gif:
