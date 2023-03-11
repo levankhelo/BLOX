@@ -9,7 +9,7 @@ services:
     privileged: true
     volumes:
       - ./core:/app:ro
-      - ./shared:/shared:rw
+      - ./shared:/shared
       - ./models/default:/config
     devices:
       - /dev:/dev

@@ -1,8 +1,8 @@
 streams:
   usb: true
   rtsp: false
-  snap-delay: 0 # 0.2
+  snap-delay: 0.2 # 0.2
 
 gif:
-  fps: 60
-  length: 15
+  fps: 5
+  length: 5

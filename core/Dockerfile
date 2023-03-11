@@ -19,5 +19,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Set up shared directory
 RUN mkdir /shared
 
+RUN umask 0000
+
 # Set up entrypoint
 CMD ["python", "main.py"]
